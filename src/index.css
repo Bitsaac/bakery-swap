@@ -1,13 +1,15 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=baloo da');
+
+:root {
+  --font-family: 'Baloo da', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --color-text: #722F0D;
+  --color-text-2: #D6A485;
+  --color-text-3: #F78B41;
+  -color-text-4: #DDA585;
+  -color-text-5: #D6A485;
+  -color-button: #AC562A;
+  -color-button-2: #DEBAA7;
 }

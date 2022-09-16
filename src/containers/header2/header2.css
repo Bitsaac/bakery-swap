@@ -1,0 +1,113 @@
+.header2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+.header2-menu p {
+  color: var(--color-text);
+  padding: 0 .2rem;
+  font-size: .7rem;
+  white-space: nowrap;
+}
+.header2-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius:10px ;
+  padding: 10px 18px;
+  border: none;
+  background: rgb(255, 249, 240) none repeat scroll 0% 0%;
+  overflow: auto;
+}
+.header2-menu img {
+  width: 2.5rem;
+  padding: 0 .5rem;
+}
+
+
+.header2-menu .harvest {
+  text-align: center;
+  border-radius: 10px;
+  outline: currentcolor none medium;
+  border: 1px solid transparent;
+  text-decoration: none;
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  -moz-box-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  background-color: rgb(172, 86, 42);
+  color: rgb(255, 253, 250);
+  height: 30px;
+  margin-left: .7rem ;
+  padding: .5rem;
+  font-size: 12px;
+}
+
+
+
+.header2-menu2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;  
+  align-items: center;
+  background: rgb(255, 249, 240) none repeat scroll 0% 0%;
+  border-radius: 10px;
+  padding: 10px 20px;
+ 
+}
+.header2-menu2 img {
+  display: flex;
+  justify-content:flex-end ;
+  margin-left: 1rem;
+}
+.header2-menu2 p {
+  font-size: 13px;
+  color: var(--color-text) !important;
+}
+
+
+@media screen and (max-width: 850px) {
+  .header2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header2-menu {
+    margin-bottom: 1rem;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .header2-menu2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .header2-menu img {
+    width: 2.5rem;
+    padding-right: 1rem;
+  }
+}
+

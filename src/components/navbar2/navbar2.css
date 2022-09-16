@@ -1,0 +1,38 @@
+.navbar2 {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 240px;
+  background-color: #FFFFFF;
+  height: calc(-60px + 100vh);
+  overflow: auto;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  top: 59px;
+  left: 0;
+  z-index: 1;
+ 
+  overflow: auto;
+  
+}
+.earn {
+
+  background: -moz-linear-gradient(90deg, rgba(255, 122, 0, 1) 0%, rgba(255, 167, 0, 1) 56%, rgba(255, 167, 0, 1) 100%);
+
+
+  background: -webkit-linear-gradient(90deg, rgba(255, 122, 0, 1) 0%, rgba(255, 167, 0, 1) 56%, rgba(255, 167, 0, 1) 100%);
+
+
+  background: -o-linear-gradient(90deg, rgba(255, 122, 0, 1) 0%, rgba(255, 167, 0, 1) 56%, rgba(255, 167, 0, 1) 100%);
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFA700', endColorstr='#FF7A00', GradientType=0);
+
+
+  background: -ms-linear-gradient(90deg, rgba(255, 122, 0, 1) 0%, rgba(255, 167, 0, 1) 56%, rgba(255, 167, 0, 1) 100%);
+
+  background: linear-gradient(90deg, rgba(255, 122, 0, 1) 0%, rgba(255, 167, 0, 1) 56%, rgba(255, 167, 0, 1) 100%);
+
+}
+
+
+ 

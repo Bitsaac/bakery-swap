@@ -1,0 +1,146 @@
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: var(--font-family);
+  font-weight: 1000;
+  font-size: 12px;
+ 
+}
+.main .first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.first img {
+  width: 54px;
+  height: 54px;
+}
+.first p {
+  font-size: 14px;
+  margin: 10px 0; 
+}
+.main .identity {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.identity .info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.identity .info2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.identity .info3 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.main .claims {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.main button {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 10px;
+  display: flex;
+  border: none;
+  background-color: #DEBAA7;
+  color: white;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 12px;
+} 
+.main .tex {
+  font-size: 12px;
+  font-weight: 200;
+}
+/* .main img {
+  width: 60px;
+  height: 60px;
+  margin: .3rem 1rem;
+  margin-bottom: 2rem;
+  
+}
+.main .tex {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.main .text {
+  font-size: 1.8rem;
+  font-weight: 1000;
+  margin-bottom: 1rem;
+}
+..identity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:230px;
+  margin: 1rem 0;
+}
+..identity .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  
+}
+..identity .info2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+..identity .info3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.main .claims {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+.main button {
+  width: 230px !important;
+  height: 3rem !important;
+  margin: .8rem 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  font-size: 1.7rem !important;
+  border: none;
+  background-color: #DEBAA7;
+  color: white;
+} */
+
