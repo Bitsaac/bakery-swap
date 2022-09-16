@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/bitsaac-web3/static/css/main.97ee5cf3.css",
+    "main.css": "/bitsaac-web3/static/css/main.3035ed66.css",
     "main.js": "/bitsaac-web3/static/js/main.46241557.js",
     "static/media/background.jpg": "/bitsaac-web3/static/media/background.84c0bf66f9f57e6830a3.jpg",
     "static/media/car.svg": "/bitsaac-web3/static/media/car.beb4a20a5ccf6a202990b3279385103f.svg",
@@ -33,11 +33,11 @@
     "static/media/Home.svg": "/bitsaac-web3/static/media/Home.3147e8ef95ad9a70c75aa825aa2699b9.svg",
     "static/media/starve.svg": "/bitsaac-web3/static/media/starve.4e1f2d9f2a9c6e9ba8c56d5b6713016e.svg",
     "index.html": "/bitsaac-web3/index.html",
-    "main.97ee5cf3.css.map": "/bitsaac-web3/static/css/main.97ee5cf3.css.map",
+    "main.3035ed66.css.map": "/bitsaac-web3/static/css/main.3035ed66.css.map",
     "main.46241557.js.map": "/bitsaac-web3/static/js/main.46241557.js.map"
   },
   "entrypoints": [
-    "static/css/main.97ee5cf3.css",
+    "static/css/main.3035ed66.css",
     "static/js/main.46241557.js"
   ]
 }
