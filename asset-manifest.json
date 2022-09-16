@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/bitsaac-web3/static/css/main.97ee5cf3.css",
+    "main.js": "/bitsaac-web3/static/js/main.46241557.js",
+    "static/media/background.jpg": "/bitsaac-web3/static/media/background.84c0bf66f9f57e6830a3.jpg",
+    "static/media/car.svg": "/bitsaac-web3/static/media/car.beb4a20a5ccf6a202990b3279385103f.svg",
+    "static/media/gat.svg": "/bitsaac-web3/static/media/gat.799bbbe1b936860496128a5365c36689.svg",
+    "static/media/header.png": "/bitsaac-web3/static/media/header.621e54baf34a4f558ad6.png",
+    "static/media/bakery.svg": "/bitsaac-web3/static/media/bakery.669d8a19a2304f719b305dd6750d0553.svg",
+    "static/media/ghc.png": "/bitsaac-web3/static/media/ghc.88fb773e5730ed9268a5.png",
+    "static/media/poker.svg": "/bitsaac-web3/static/media/poker.846b9507c85817e49263.svg",
+    "static/media/soccer.svg": "/bitsaac-web3/static/media/soccer.b7c07e4a8069ab6a9bd5.svg",
+    "static/media/tokau.svg": "/bitsaac-web3/static/media/tokau.5db2ec7515b9abcde1c8.svg",
+    "static/media/doggy.svg": "/bitsaac-web3/static/media/doggy.d49d2c95f2719f5fa50454b3eb750df8.svg",
+    "static/media/bakes.svg": "/bitsaac-web3/static/media/bakes.66e92a580bf5e24269fe4453a484387a.svg",
+    "static/media/logo.svg": "/bitsaac-web3/static/media/logo.66e92a580bf5e24269fe4453a484387a.svg",
+    "static/media/bake.svg": "/bitsaac-web3/static/media/bake.5066b8f5d637b9c6db72.svg",
+    "static/media/ghc.svg": "/bitsaac-web3/static/media/ghc.b97e2f54f82029f4ac28.svg",
+    "static/media/bnb.svg": "/bitsaac-web3/static/media/bnb.0ec5e6bd9b37bb5781e3.svg",
+    "static/media/busd.svg": "/bitsaac-web3/static/media/busd.488237bcbb08c092806e0e404596d001.svg",
+    "static/media/Bake.svg": "/bitsaac-web3/static/media/Bake.8d1d5d9af85bfffb801e24c223c939e8.svg",
+    "static/media/btc.svg": "/bitsaac-web3/static/media/btc.2287b69652a3dcd546faf34f16c7a57b.svg",
+    "static/media/v2.svg": "/bitsaac-web3/static/media/v2.0de2baa58ac950230fa6dd7a75f84942.svg",
+    "static/media/Game.svg": "/bitsaac-web3/static/media/Game.622382a7ee504896fb876f64e9b19f6e.svg",
+    "static/media/trade.svg": "/bitsaac-web3/static/media/trade.9eceef9a968f1ac59d5566cca8fdcdac.svg",
+    "static/media/eth.svg": "/bitsaac-web3/static/media/eth.08c226f888019ea37aa4dc73786f22b7.svg",
+    "static/media/info.svg": "/bitsaac-web3/static/media/info.413c341c2037fff9f33ed37da3f067d6.svg",
+    "static/media/usdt.svg": "/bitsaac-web3/static/media/usdt.c4a28c803533714fe19652c9b63f142b.svg",
+    "static/media/Launch.svg": "/bitsaac-web3/static/media/Launch.2209f38229c00f89ded69b51138024cf.svg",
+    "static/media/contact.svg": "/bitsaac-web3/static/media/contact.147bb5390d20e1bd4f72ad1f6f871a4f.svg",
+    "static/media/Earning.svg": "/bitsaac-web3/static/media/Earning.f2ce9704a7ff26880076158655f978fd.svg",
+    "static/media/nft.svg": "/bitsaac-web3/static/media/nft.2452d2a0dc93c2ce452a25644573ff82.svg",
+    "static/media/Home.svg": "/bitsaac-web3/static/media/Home.3147e8ef95ad9a70c75aa825aa2699b9.svg",
+    "static/media/starve.svg": "/bitsaac-web3/static/media/starve.4e1f2d9f2a9c6e9ba8c56d5b6713016e.svg",
+    "index.html": "/bitsaac-web3/index.html",
+    "main.97ee5cf3.css.map": "/bitsaac-web3/static/css/main.97ee5cf3.css.map",
+    "main.46241557.js.map": "/bitsaac-web3/static/js/main.46241557.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97ee5cf3.css",
+    "static/js/main.46241557.js"
+  ]
+}
