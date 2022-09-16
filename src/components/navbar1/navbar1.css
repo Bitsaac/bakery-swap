@@ -16,8 +16,6 @@
   align-items: center;
   padding: 10px;
   background-color: #FFFFFF;
-  white-space: nowrap;
-  overflow: auto;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   top: 0;
   position: fixed;
@@ -127,7 +125,7 @@
     }
    }
  
- @media screen and (max-width: 500px) {
+ @media screen and (max-width: 600px) {
    .nav {
      display: none;
    }
