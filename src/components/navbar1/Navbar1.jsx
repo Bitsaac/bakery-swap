@@ -5,6 +5,7 @@ import Navbar2 from './../navbar2/Navbar2'
 import logo from './../../assets/logo.svg';
 import bakery from './../../assets/bakery.svg';
 import { FiSettings } from 'react-icons/fi';
+import { ConnectButton } from '@web3uikit/web3';
 
 const Navbar1 = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -24,10 +25,10 @@ const Navbar1 = () => {
           </div>
           <div className='navbar1-right'>
             <div className='navbar1-right-menu'>
-                <h2 className='bsc'>BSC</h2>
-              <button className='button'>Connect Wallet</button>
+              <h2 className='bsc'>BSC</h2>
+              <ConnectButton />
               <div className='navbar1-right-menu-last'>
-                <FiSettings className='icon' />
+              <FiSettings className='icon' />
               </div>
             </div>
           </div>
