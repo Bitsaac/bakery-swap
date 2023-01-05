@@ -1,5 +1,5 @@
 import React from "react";
-import { useMoralis, useWeb3ExecuteFunction } from 'react-moralis';
+import { useMoralis } from 'react-moralis';
 import { useNotification } from '@web3uikit/core';
 import {AiOutlineClose } from 'react-icons/ai';
 import './card.css';
@@ -9,8 +9,8 @@ import { NativeBalance, SendTransaction } from "@web3uikit/web3";
 
 const Card = (props) => {
 
-  const { Moralis, chainId } = useMoralis();
-  const contractProcessor = useWeb3ExecuteFunction();
+  const { chainId } = useMoralis();
+  // const contractProcessor = useWeb3ExecuteFunction();
   const dispatch = useNotification();
   
 
