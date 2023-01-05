@@ -1,4 +1,4 @@
-export { default as Card } from './card/Card';
+export { default as Card } from './card/Cards';
 export { default as Coins } from './coins/Coins';
 export { default as Header } from './header/Header';
 export { default as Navbar1 } from './navbar1/Navbar1';

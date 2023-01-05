@@ -8,7 +8,7 @@ import { NotificationProvider } from '@web3uikit/core';
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.StrictMode>``
     <MoralisProvider initializeOnMount={false}>
       <NotificationProvider>
         <App />

@@ -18,12 +18,14 @@
 
 
 } 
-
+.set {
+  background-color: #984c25;
+}
 
 .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9, .card10, .card11, .card12, .card13, .card14, .card15, .card16, .card17 {
   background: rgb(255, 253, 250) none no-repeat scroll right top;
   border-radius: 20px;
-  margin-bottom: 24px;
+  margin: 30px 10px;
   width: 282px;
   height: 400px;
   padding: 24px;
@@ -34,115 +36,86 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  z-index: -2;
+  z-index: 1;
   position: relative;
+  background-image: url("/src/assets/card/bnb.svg");
 
-  
-  /* margin: 2rem 2rem; */
+}
+.card-main button{
+  margin-bottom: 20px;
 }
 
 
-/* .card-main {
-  width:100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card {
-  width: 80%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
-  margin: 1rem 1.5rem;
-  margin-bottom: 3rem;
-
-}
-.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9, .card10, .card11, .card12, .card13, .card14, .card15, .card16, .card17 {
-  background: rgb(255, 253, 250) none no-repeat scroll right top;
-  border-radius: 20px;
-  margin-bottom: 24px;
-  padding: 24px;
-  border: 2px solid rgb(172, 86, 42);
-  color: rgb(197, 133, 96);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin: 2rem 2rem;
-} */
-
+/* 
 .card1 {
   background-image: url("/src/assets/card/ghc.svg");
-  z-index: -2;
+ 
+ 
 }
 .card2 {
   background-image: url("/src/assets/card/bnb.svg");
-  z-index: -2;
+ 
 }
 .card3 {
   background-image: url("/src/assets/card/busd.svg");
-  z-index: -2;
+ 
 }
 .card4 {
   background-image: url("/src/assets/card/bake.svg");
-  z-index: -2;
+ 
 }
 .card5 {
   background-image: url("/src/assets/card/btc.svg");
-  z-index: -2;
+ 
 }
 .card6 {
   background-image: url("/src/assets/card/eth.svg");
-  z-index: -2;
+ 
 }
 .card7 {
   background-image: url("/src/assets/card/busd.svg");
-  z-index: -2;
+ 
 }
 .card8 {
   background-image: url("/src/assets/card/usdt.svg");
-  z-index: -2;
+ 
 }
 .card9 {
   background-image: url("/src/assets/card/doggy.svg");
-  z-index: -2;
+ 
 }
 .card10 {
   background-image: url("/src/assets/card/car.svg");
-  z-index: -2;
+ 
 }
 .card11 {
   background-image: url("/src/assets/card/car.svg");
-  z-index: -2;
+ 
 }
 .card12 {
   background-image: url("/src/assets/card/gat.svg");
-  z-index: -2;
+ 
 }
 .card13 {
   background-image: url("/src/assets/card/poker.svg");
-  z-index: -2;
+ 
 }
 .card14 {
   background-image: url("/src/assets/card/poker.svg");
-  z-index: -2;
+ 
 }
 .card15 {
   background-image: url("/src/assets/card/tokau.svg");
-  z-index: -2;
+ 
 }
 .card16 {
   background-image: url("/src/assets/card/soccer.svg");
-  z-index: -2;
+ 
 }
 .card17 {
   background-image: url("/src/assets/card/soccer.svg");
-  z-index: -2;
-}
+ 
+} */
 @media (min-width: 500px) and (max-width: 1024px){
   .card {
     width: 100%;

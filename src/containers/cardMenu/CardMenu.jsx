@@ -4,11 +4,12 @@ import './cardmenu.css';
 const CardMenu = ({img, title, detail, detail2, percent}) => {
   return (
     <div className='main'>
+      
       <div className='first'>
         <img src={img} className='ident' alt='/' />
         <p className='text'> {title}</p>
       </div>
-      <div className='identity'>
+      <div className='identity' >
         <div className='info'>
           <p className='tex'>Deposit:</p>
           <p>{detail}</p>
@@ -21,10 +22,6 @@ const CardMenu = ({img, title, detail, detail2, percent}) => {
           <p className='tex'>ROI:</p>
           <p>{percent}</p>
         </div>
-      </div>
-      <div className='claims'>
-        <button className='dep'> Deposit </button>
-        <button className='clm'> Claim </button>
       </div>
     </div>
   )
