@@ -35,7 +35,7 @@ const Card = (props) => {
           "type": "function"
         }
       ],
-      params: { 
+      params: {
         note:" Thanks and get out of here"
       },
       msgValue: Moralis.Units.ETH(val),
@@ -43,16 +43,16 @@ const Card = (props) => {
 
     await contractProcessor.fetch({
       params: options,
-      onSuccess: () => {
+      onComplete: () => {
         handleSuccess();
       },
       onError: (error) => {
         handleError(error.data.message)
       },
-      
-    }).catch (e => {
-      rejectError()
-    })
+      throwOnError: (error) => {
+        handleError(error.data.message)
+      }
+    });
 
 
   } 
@@ -82,14 +82,6 @@ const Card = (props) => {
     });
   }; 
   
-  const rejectError= () => {
-    dispatch({
-      type: "Error",
-      message: "User denied Transaction",
-      title: "Deposit Failed",
-      position: "topL",
-    });
-  }; 
 
   
   return (props.trigger) ? (
