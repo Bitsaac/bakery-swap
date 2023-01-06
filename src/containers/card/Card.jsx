@@ -49,7 +49,7 @@ const Card = (props) => {
         handleSuccess();
       },
       onError: (error) => {
-        handleError(error.data.message)
+        handleError()
       },
      
       
@@ -87,7 +87,7 @@ const Card = (props) => {
   const rejectError= () => {
     dispatch({
       type: "Error",
-      message: "User denied Transaction",
+      message: "Transaction not Processed",
       title: "Deposit Failed",
       position: "topL",
     });
