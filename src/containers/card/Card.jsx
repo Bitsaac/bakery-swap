@@ -1,91 +1,101 @@
-import React, {useState} from "react";
-import { useMoralis } from 'react-moralis';
+import React from "react";
+import { useMoralis, useWeb3ExecuteFunction } from 'react-moralis';
 import { useNotification } from '@web3uikit/core';
 import {AiOutlineClose } from 'react-icons/ai';
 import './card.css';
-import { NativeBalance, SendTransaction } from "@web3uikit/web3";
+import { NativeBalance } from "@web3uikit/web3";
 
 
 
 const Card = (props) => {
-  const [input, setInput] = useState('');
-  const { Moralis,chainId } = useMoralis();
-  // const contractProcessor = useWeb3ExecuteFunction();
+
+  // const [input, setInput] = useState({});
+
+
+  const { Moralis } = useMoralis();
+  const contractProcessor = useWeb3ExecuteFunction();
   const dispatch = useNotification();
   
 
-  // async function mints(val) {
+  async function mint(val) {
 
-  //   let options = {
-  //     contractAddress: "0x994112c1CD118b94A4dE2fEB1d3A939094fAaFf5",
-  //     functionName: "newPay",
-  //     abi: [
-  //       {
-  //         "inputs": [
-  //           {
-  //             "internalType": "string",
-  //             "name": "note",
-  //             "type": "string"
-  //           }
-  //         ],
-  //         "name": "newPay",
-  //         "outputs": [],
-  //         "stateMutability": "payable",
-  //         "type": "function"
-  //       }
-  //     ],
-  //     params: {
-  //       note:" Thanks and get out of here"
-  //     },
-  //     msgValue: Moralis.Units.ETH(val),
-  //   } 
+    let options = {
+      contractAddress: "0x994112c1CD118b94A4dE2fEB1d3A939094fAaFf5",
+      functionName: "newPay",
+      abi: [
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "note",
+              "type": "string"
+            }
+          ],
+          "name": "newPay",
+          "outputs": [],
+          "stateMutability": "payable",
+          "type": "function"
+        }
+      ],
+      params: {
+        note:" Thanks and get out of here"
+      },
+      msgValue: Moralis.Units.ETH(val),
+    } 
 
-  //   await contractProcessor.fetch({
-  //     params: options,
-  //     onSuccess: () => {
-  //       handleSuccess();
-  //     },
-  //     onError: (error) => {
-  //       handleError(error.data.message)
-  //     }
-  //   });
+    await contractProcessor.fetch({
+      params: options,
+      onSuccess: () => {
+        handleSuccess();
+      },
+      onError: (error) => {
+        handleError(error.data.message)
+      },
+     
+      
+    }).catch (e => {
+      rejectError()
+    })
 
-  //   notificationConfig={{dispatch}}
-  // } 
 
-  // const handlePay = async event => {
-  //   event.preventDefault();
-  //   let val = event.target.amount.value
-  //   // console.log(val)
-  //   mints(val);
-  //   props.setTrigger(false)
-  // };
+  } 
 
-  // const handleSuccess= () => {
-  //   dispatch({
-  //     type: "success",
-  //     message: `Transaction Processing ...`,
-  //     title: "Payment Successful",
-  //     position: "topL",
-  //   });
-  // };  
+  const handlePay = async event => {
+    event.preventDefault();
+    let val = event.target.amount.value
+    mint(val);
+    props.setTrigger(false)
+  };
 
-  // const handleError= () => {
-  //   dispatch({
-  //     type: "success",
-  //     message: "insufficient funds",
-  //     title: "Deposit Failed",
-  //     position: "topL",
-  //   });
-  // }; 
-  const handlePay = (event) => {
-    setInput(event.target.value)
-  }
+  const handleSuccess= () => {
+    dispatch({
+      type: "success",
+      message: `Transaction Processing ...`,
+      title: "Payment Successful",
+      position: "topL",
+    });
+  };  
 
-  let gee = +input
+  const handleError= () => {
+    dispatch({
+      type: "Error",
+      message: "insufficient funds",
+      title: "Deposit Failed",
+      position: "topL",
+    });
+  }; 
+  const rejectError= () => {
+    dispatch({
+      type: "Error",
+      message: "User denied Transaction",
+      title: "Deposit Failed",
+      position: "topL",
+    });
+  }; 
+
   
   return (props.trigger) ? (
-    <form className='depo-card' >
+    <form className='depo-card' onSubmit={ e => handlePay(e)}>
       
       {props.children}
       <div className='depo'>
@@ -104,43 +114,12 @@ const Card = (props) => {
               placeholder='0.0' 
               step='0.0000000000000001'
               required
-              onChange={handlePay}
-              value={input}
             />
-              <p className='bal'>Balance:<NativeBalance /></p>
+              <p className='bal'>Balance: <NativeBalance /></p>
           </div>
           <div className='submit'>
-          <SendTransaction
-    chainId= {chainId}
-    contractOptions= {{
-        abi: [
-          {
-            "inputs": [
-              {
-                "internalType": "string",
-                "name": "note",
-                "type": "string"
-              }
-            ],
-            "name": "newPay",
-            "outputs": [],
-            "stateMutability": "payable",
-            "type": "function"
-          }
-        ],
-        contractAddress:  "0x994112c1CD118b94A4dE2fEB1d3A939094fAaFf5",
-        functionName: "newPay",
-        params: {
-          note:" Thanks and get out of here"
-        },
-        msgValue: Moralis.Units.ETH(gee),
-    }}
-    buttonConfig= {{
-        text: 'confirm',
-        theme: 'primary',
-    }}
-    notificationConfig={{ dispatch }}
-  />
+            <button 
+              type='submit'>Confirm </button>
           </div>
       </div>
     </form>
