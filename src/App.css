@@ -43,8 +43,7 @@ body {
 }
 .App {
   display: block;
-  height: 100vh !important;
-  overflow-x: hidden;
+ 
   
 }
 
